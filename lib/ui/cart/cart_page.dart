@@ -12,11 +12,32 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Column(
-        children: [
-          CartHeader(context),
-
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            CartHeader(context),
+            SizedBox(
+              height: 600,
+              child: ListView.builder(
+                itemCount: 5,
+                itemBuilder: (context, index){
+                return CartItem(
+                  name: 'Pineapple',
+                  subtitle: 'Sunny Hill farm',
+                  image: 'assets/images/pineapple.png',
+                  price: 14.5,
+                  quantity: 3,
+                );}
+              ),
+            ),
+            SummaryCard(
+              subtotal: 66.5,
+              deliveryFee: 2.99,
+              serviceFee: 1.50,
+            ),
+        
+          ],
+        ),
       ),
 
     );
