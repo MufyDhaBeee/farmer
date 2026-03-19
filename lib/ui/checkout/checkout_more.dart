@@ -1,3 +1,4 @@
+import 'package:customer_app/ui/order_placed/order_placed.dart';
 import 'package:flutter/material.dart';
 ///----------------------------------------appbar part---------------------------------------///
 Widget CheckoutHeader(context) {
@@ -349,18 +350,23 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
         SizedBox(height: 50,),
         Padding(
           padding: const EdgeInsets.only(left: 20,right: 20),
-          child: Container(
-            height: 60,
-            decoration: BoxDecoration(
-              color: Color.fromRGBO(15, 87, 0, 1),
-              borderRadius: BorderRadius.circular(30),
-            ),
-            child: Center(
-              child: Text('Place order', style: TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 16,
-                color: Color.fromRGBO(255, 255, 255, 1),
-              ),),
+          child: InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => OrderPlacedLoadingScreen()));
+            },
+            child: Container(
+              height: 60,
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(15, 87, 0, 1),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Center(
+                child: Text('Place order', style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                  color: Color.fromRGBO(255, 255, 255, 1),
+                ),),
+              ),
             ),
           ),
         ),

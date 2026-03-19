@@ -337,7 +337,7 @@ class _CheckoutButtonState extends State<CheckoutButton> {
           ],
         ),
         child: Center(
-          child: Text('Place order', style: TextStyle(
+          child: Text('Proceed to checkout', style: TextStyle(
             color: Color.fromRGBO(255, 255, 255, 1),
             fontWeight: FontWeight.w500,
             fontSize: 16,
