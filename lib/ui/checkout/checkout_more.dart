@@ -327,6 +327,44 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
           indent: 20,
           endIndent: 20,
         ),
+        SizedBox(height: 15,),
+        Padding(
+          padding: const EdgeInsets.only(left: 20,right: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Total Amount', style: TextStyle(
+                fontSize:20,
+                fontWeight: FontWeight.w600,
+                color: Color.fromRGBO(0, 0, 0, 1),
+              ),),
+              Text('\$${70.99}', style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 20,
+                color: Color.fromRGBO(101, 255, 84, 1),
+              ),),
+            ],
+          ),
+        ),
+        SizedBox(height: 50,),
+        Padding(
+          padding: const EdgeInsets.only(left: 20,right: 20),
+          child: Container(
+            height: 60,
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(15, 87, 0, 1),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Center(
+              child: Text('Place order', style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 16,
+                color: Color.fromRGBO(255, 255, 255, 1),
+              ),),
+            ),
+          ),
+        ),
+        SizedBox(height: 10,),
 
       ],
     );

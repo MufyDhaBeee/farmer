@@ -22,7 +22,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
             Applepay(),
             SizedBox(height: 10,),
             Googlepay(),
-            PlaceOrderButton()
+            PlaceOrderButton(),
+
 
         
           ],
