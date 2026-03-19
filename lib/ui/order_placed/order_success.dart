@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:customer_app/ui/bott_navbar/bott_naav.dart';
 import 'package:customer_app/ui/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class _OrderSuccessScreenState extends State<OrderSuccessScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const HomePage(),
+          builder: (context) => const BottomScreen(),
         ),
       );
     });
