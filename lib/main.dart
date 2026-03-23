@@ -1,7 +1,9 @@
 import 'package:customer_app/ui/bott_navbar/bott_naav.dart';
 import 'package:customer_app/ui/choose_page/choose_page.dart';
+import 'package:customer_app/ui/choose_page/choose_page_more.dart';
 import 'package:customer_app/ui/home/home.dart';
 import 'package:customer_app/ui/login/login.dart';
+import 'package:customer_app/ui/welcome_farmer/welcome_farmer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  Login(),
+      home:  WelcomeFarmer(),
     );
   }
 }
